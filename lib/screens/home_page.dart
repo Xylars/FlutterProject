@@ -73,9 +73,9 @@ class _HomePageState extends State<HomePage> {
           onSave: (dateTime) {
             setState(() {
               db.todoList.add([
-                _controller.text, // title
-                false,            // completed
-                dateTime,         // full DateTime
+                _controller.text,
+                false,            
+                dateTime,        
               ]);
               _controller.clear();
             });
@@ -194,7 +194,7 @@ class _HomePageState extends State<HomePage> {
         onPressed: createNewTask,
         child: const Icon(Icons.add),
       )
-          : null, // only show button on Home page
+          : null, // only show add button in home page
       body: pages[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
