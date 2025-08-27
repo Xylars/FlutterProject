@@ -40,7 +40,7 @@ class TodoTitle extends StatelessWidget {
         onChanged: onChanged,
       ),
       trailing: Row(
-        mainAxisSize: MainAxisSize.min, // important to keep Row compact
+        mainAxisSize: MainAxisSize.min,
         children: [
           if (onEdit != null)
             IconButton(
